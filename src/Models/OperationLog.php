@@ -3,10 +3,9 @@
 namespace Dcat\Admin\Models;
 
 use Dcat\Admin\Traits\HasDateTimeFormatter;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
-class OperationLog extends Model
+class OperationLog extends TenantBaseModel
 {
     use HasDateTimeFormatter;
 

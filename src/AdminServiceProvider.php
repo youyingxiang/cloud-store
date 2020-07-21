@@ -72,6 +72,10 @@ class AdminServiceProvider extends ServiceProvider
             'admin.session',
             'admin.upload',
         ],
+        'tenant' => [
+            \Spatie\Multitenancy\Http\Middleware\NeedsTenant::class,
+            \Spatie\Multitenancy\Http\Middleware\EnsureValidTenantSession::class
+        ],
     ];
 
     public function boot()

@@ -5,13 +5,12 @@ namespace Dcat\Admin\Models;
 use Dcat\Admin\Support\Helper;
 use Dcat\Admin\Traits\HasDateTimeFormatter;
 use Dcat\Admin\Traits\ModelTree;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Illuminate\Http\Request;
 use Illuminate\Support\Str;
 use Spatie\EloquentSortable\Sortable;
 
-class Permission extends Model implements Sortable
+class Permission extends TenantBaseModel implements Sortable
 {
     use HasDateTimeFormatter,
         ModelTree {

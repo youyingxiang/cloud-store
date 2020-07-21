@@ -49,12 +49,12 @@ class InstallCommand extends Command
      */
     public function initDatabase()
     {
-        $this->call('migrate');
+        $this->call('migrate',["--database" => "tenant"]);
 
         $userModel = config('admin.database.users_model');
 
         if ($userModel::count() == 0) {
-            $this->call('db:seed', ['--class' => AdminTablesSeeder::class]);
+            $this->call('db:seed', ['--class' => AdminTablesSeeder::class,"--database" => "tenant"]);
         }
     }
 

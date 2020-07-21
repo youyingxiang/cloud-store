@@ -4,7 +4,6 @@ namespace Dcat\Admin\Models;
 
 use Dcat\Admin\Traits\HasDateTimeFormatter;
 use Dcat\Admin\Traits\ModelTree;
-use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 use Spatie\EloquentSortable\Sortable;
 
@@ -15,7 +14,7 @@ use Spatie\EloquentSortable\Sortable;
  *
  * @method where($parent_id, $id)
  */
-class Menu extends Model implements Sortable
+class Menu extends TenantBaseModel implements Sortable
 {
     use HasDateTimeFormatter,
         MenuCache,
