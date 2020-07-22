@@ -4,9 +4,9 @@ namespace DummyNamespace;
 
 DummyImportDateTimeFormatterTrait
 DummyImportSoftDeletesTrait
-use Illuminate\Database\Eloquent\Model;
+use Dcat\Admin\Models\TenantBaseModel;
 
-class DummyClass extends Model
+class DummyClass extends TenantBaseModel
 {
 	DummyUseDateTimeFormatterTrait
     DummyUseSoftDeletesTrait

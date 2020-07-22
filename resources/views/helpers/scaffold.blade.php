@@ -446,10 +446,10 @@
             $controller.val(val ? (controllerNamespace + val + 'Controller') : controllerNamespace);
         }
         function writeModel(val) {
-            $model.val(modelNamespace + ucfirst(ucfirst(toHump(toLine(val)))));
+            $model.val(modelNamespace + ucfirst(ucfirst(toHump(toLine(val)))) + 'Model');
         }
         function witeRepository(val) {
-            $repository.val(repositoryNamespace + ucfirst(ucfirst(toHump(toLine(val)))))
+            $repository.val(repositoryNamespace + ucfirst(ucfirst(toHump(toLine(val)))) + 'Repository')
         }
 
         function getTR() {
