@@ -1,8 +1,8 @@
 {
-    "name": "dcat/laravel-admin",
-    "description": "dcat admin",
+    "name": "yxx/cloud-store-admin",
+    "description": "cloud store admin",
     "type": "library",
-    "keywords": ["dcat", "laravel", "admin", "grid", "form", "laravel admin"],
+    "keywords": ["sass","cloud"],
     "license": "MIT",
     "authors": [
         {
