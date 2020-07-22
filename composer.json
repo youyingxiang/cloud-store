@@ -3,12 +3,11 @@
     "description": "dcat admin",
     "type": "library",
     "keywords": ["dcat", "laravel", "admin", "grid", "form", "laravel admin"],
-    "homepage": "https://github.com/jqhph/dcat-admin",
     "license": "MIT",
     "authors": [
         {
-            "name": "jqh",
-            "email": "841324345@qq.com"
+            "name": "yxx",
+            "email": "1365831278@qq.com"
         }
     ],
     "require": {
@@ -16,7 +15,8 @@
         "symfony/dom-crawler": "~3.1|~4.0|~5.0",
         "laravel/framework": "~5.5|~6.0|~7.0",
         "doctrine/dbal": "2.*",
-        "spatie/eloquent-sortable": "3.*"
+        "spatie/eloquent-sortable": "3.*",
+        "spatie/laravel-multitenancy": "^1.0"
     },
     "require-dev": {
         "laravel/dusk": "~5.9",
